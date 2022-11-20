@@ -13,9 +13,9 @@ from nextcord.ui import Button, View
 
 links = json.load(open("gifs.json"))
 
-load_dotenv()
+# load_dotenv()
 
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
 
 intents = nextcord.Intents.default()
 intents.message_content = True
