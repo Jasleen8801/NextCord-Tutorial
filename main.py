@@ -7,6 +7,7 @@ import json
 import random
 from PIL import Image, ImageFont, ImageDraw
 import textwrap
+
 from nextcord import File, ButtonStyle, Embed, Color
 from nextcord.ui import Button, View
 
