@@ -1,0 +1,14 @@
+{
+    "Essential Commands": {
+        "pic": "get a cute doggo pic :)",
+        "gif": "get a cute doggo gif :)",
+        "play": "get a cute playing doggo gif :)",
+        "sleep": "get a cute sleeping doggo gif :)",
+        "feed": "get a cute feeding doggo gif :)"
+    },
+    "Basic Commands": {
+        "speak [msg]": "make doggo say something you like",
+        "help": "shows this command, DUHHHH",
+        "hi": "say hi to the dog bot"
+    }
+}
