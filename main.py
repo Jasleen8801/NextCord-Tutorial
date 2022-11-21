@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from nextcord.ext import commands
 import nextcord
 import requests
@@ -13,7 +13,7 @@ from nextcord.ui import Button, View, Select
 links = json.load(open("gifs.json"))
 helpGuide = json.load(open("help.json"))
 
-load_dotenv()
+# load_dotenv()
 
 DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
 GUILD_ID = 1028619109044326440
