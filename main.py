@@ -15,7 +15,7 @@ helpGuide = json.load(open("help.json"))
 
 load_dotenv()
 
-DISCORD_TOKEN = os.getenv["DISCORD_TOKEN"]
+DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
 GUILD_ID = 1028619109044326440
 
 intents = nextcord.Intents.default()
