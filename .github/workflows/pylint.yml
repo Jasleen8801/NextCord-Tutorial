@@ -1,8 +1,12 @@
 name: Discord Bot
 
 on:
-  schedule:
-    - cron: "*/10 * * * *"
+  label:
+    types:
+      - created
+  push:
+    branches:
+      - main
 
 jobs:
   build:
