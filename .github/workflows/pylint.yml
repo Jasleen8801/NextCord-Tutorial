@@ -25,7 +25,8 @@ jobs:
 
       - name: Running Script
         env:
-          WEBHOOK: ${{ secrets.WEBHOOK }}
+          WEBHOOK: ${{ secrets.DISCORD_TOKEN }}
         run: |
+          pip install --upgrade pip
           pip install -r requirements.txt
           python main.py
