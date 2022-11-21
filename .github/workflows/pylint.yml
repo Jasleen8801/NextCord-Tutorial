@@ -1,0 +1,27 @@
+name: Discord Webhook
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Setting up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+          architecture: "x64"
+
+      - name: Running Script
+        env:
+          WEBHOOK: ${{ secrets.WEBHOOK }}
+        run: |
+          pip install -r requirements.txt
+          python script_remote.py
