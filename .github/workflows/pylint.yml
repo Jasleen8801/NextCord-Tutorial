@@ -24,4 +24,4 @@ jobs:
           WEBHOOK: ${{ secrets.WEBHOOK }}
         run: |
           pip install -r requirements.txt
-          python script_remote.py
+          python main.py
