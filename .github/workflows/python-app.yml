@@ -4,13 +4,8 @@
 name: run main.py
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-permissions:
-  contents: read
+  schedule:
+    - cron: '0 0 * * 1' # At 00:00 on Monday
 
 jobs:
   build:
