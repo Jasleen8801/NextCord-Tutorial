@@ -10,6 +10,7 @@ import textwrap
 from nextcord import File, ButtonStyle, Embed, Color, SelectOption, Intents, Interaction, SlashOption
 from nextcord.ui import Button, View, Select
 
+
 links = json.load(open("gifs.json"))
 helpGuide = json.load(open("help.json"))
 
